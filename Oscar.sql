@@ -13,10 +13,10 @@ Tipo_de_Filme VARCHAR(255)
 
 INSERT INTO diretores ( Nome, Sexo, ID_Filme, Tipo_de_Filme) 
 VALUES
-( 'Jane Campion', 'Feminino', '1', 'Romance'),
-( 'Ryusuke Hamaguchi', 'Masculino', '2', 'Mistério'),
-( 'Paul Thomas Anderson', 'Masculino', '3', 'Comédia'),
-( 'Steven Spielberg', 'Masculino', '4', 'Ficção'),
+( 'Ryusuke Hamaguchi', 'Masculino', '1', 'Mistério'),
+( 'Jane Campion', 'Feminino', '2', 'Romance'),
+( 'Steven Spielberg', 'Masculino', '3', 'Ficção'),
+( 'Paul Thomas Anderson', 'Masculino', '4', 'Comédia'),
 ( 'Kenneth Branagh', 'Masculino', '5', 'Drama');
 
 
@@ -29,12 +29,11 @@ Lancamento DATE
 ); 
 INSERT INTO Filmes ( Nome, Tipo_de_Filme, ID_Roteiro, Lancamento)
 VALUES
-( 'Jane Campion', 'Romance', '6', '2021'),
-( 'Ryusuke Hamaguchi', 'Mistério','7', '2021'),
+( 'Ryusuke Hamaguchi', 'Mistério','6', '2021'),
+( 'Jane Campion', 'Romance', '7', '2021'),
 ( 'Paul Thomas', 'Comédia','8', '2021'),
 ( 'Steven Spielberg', 'Ficção', '9', '2021'),
 ( 'Kenneth Branagh', 'Drama', '10', '2021');
-
 
 CREATE TABLE Atores (
 ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -47,9 +46,9 @@ Coadjuvante BOOLEAN
 
 INSERT INTO Atores ( Nome, Sexo, ID_Diretor, ID_Filme, Coadjuvante)
 VALUES
-('Benedict Cumberbath', 'M', 'Jane Campion', 'The Power Of The Dog', 'Kodi Smit'),
-('Ariana DeBose', 'F', 'Steven Spielberg', 'WestSide Sory', 'Nenhum'),
-('Caitriona Balfe', 'F', 'Kenneth Branagh', 'Belfast', 'Judi Dench');
+('Benedict Cumberbath', 'Masculino', 'Jane Campion', 'The Power Of The Dog', 'Kodi Smit'),
+('Ariana DeBose', 'Feminino', 'Steven Spielberg', 'WestSide Sory', 'Nenhum'),
+('Caitriona Balfe', 'Feminino', 'Kenneth Branagh', 'Belfast', 'Judi Dench');
 
 CREATE TABLE MelhorFilme (
 ID INT AUTO_INCREMENT PRIMARY KEY,
